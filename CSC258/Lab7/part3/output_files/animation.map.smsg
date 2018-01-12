@@ -1,3 +1,0 @@
-Info (10281): Verilog HDL Declaration information at animation.v(427): object "colour" differs only in case from object "Colour" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab7/part3/animation.v Line: 427
-Info (10281): Verilog HDL Declaration information at animation.v(429): object "X" differs only in case from object "x" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab7/part3/animation.v Line: 429
-Info (10281): Verilog HDL Declaration information at animation.v(430): object "Y" differs only in case from object "y" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab7/part3/animation.v Line: 430

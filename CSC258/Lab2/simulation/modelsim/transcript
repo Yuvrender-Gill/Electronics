@@ -1,7 +1,0 @@
-# vsim /h/u11/c6/01/gillyuv2/CSC258/Lab2/simulation/modelsim/hex_decoder.v 
-# Start time: 19:12:58 on Oct 01,2017
-# ** Error (suppressible): (vsim-19) Failed to access library '/h/u11/c6/01/gillyuv2/CSC258/Lab2/simulation/modelsim/hex_decoder' at "/h/u11/c6/01/gillyuv2/CSC258/Lab2/simulation/modelsim/hex_decoder".
-# No such file or directory. (errno = ENOENT)
-# Error loading design
-# End time: 19:12:58 on Oct 01,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0

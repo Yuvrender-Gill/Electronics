@@ -1,6 +1,0 @@
-
-State Machine - |pointer|control:cont|current_state
-Name current_state.DRAW_COLOR_BOX current_state.CHANGE_DIR current_state.DRAW_BLACK_BOX 
-current_state.DRAW_COLOR_BOX 0 0 0 
-current_state.DRAW_BLACK_BOX 1 0 1 
-current_state.CHANGE_DIR 1 1 0 

@@ -1,3 +1,0 @@
-Info (10281): Verilog HDL Declaration information at EnemyPath.v(445): object "x" differs only in case from object "X" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/tt/EnemyPath.v Line: 445
-Info (10281): Verilog HDL Declaration information at EnemyPath.v(445): object "y" differs only in case from object "Y" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/tt/EnemyPath.v Line: 445
-Info (10281): Verilog HDL Declaration information at EnemyPath.v(446): object "colour" differs only in case from object "Colour" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/tt/EnemyPath.v Line: 446
