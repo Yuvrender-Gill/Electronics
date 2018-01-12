@@ -1,0 +1,239 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u11/c6/01/gillyuv2/CSC258/Lab5/test
+vDFlipFlop
+Z1 !s110 1508438952
+!i10b 1
+!s100 o0dz;2cP6XfL`R=lk1Cl@0
+I>VZOGDSzL:09kkljkiQVE2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1468039952
+Z4 8morsecode.v
+Z5 Fmorsecode.v
+L0 93
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1508438952.000000
+Z8 !s107 morsecode.v|
+Z9 !s90 -reportprogress|300|morsecode.v|
+!i113 1
+Z10 tCvgOpt 0
+n@d@flip@flop
+vDisplayCounter
+Z11 !s110 1508431584
+!i10b 1
+!s100 oHK1A>KFn<fzL4n3PWkAA3
+I@TLZIKUjMzZ>a;c07]RQ;1
+R2
+R0
+Z12 w1508431439
+8V.v
+FV.v
+L0 52
+R6
+r1
+!s85 0
+31
+Z13 !s108 1508431584.000000
+Z14 !s107 V.v|
+Z15 !s90 -reportprogress|300|V.v|
+!i113 1
+R10
+n@display@counter
+vFlashCounter
+R11
+!i10b 1
+!s100 WM`h5cGVg3H0_]ifb8XLX3
+IlIofmajIhF`WU3Sj=^CPl3
+R2
+R0
+R12
+8V.v
+FV.v
+L0 3
+R6
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R10
+n@flash@counter
+vhxdisplay
+R11
+!i10b 1
+!s100 d?mbB38O2kGgGnHaWPScT3
+I4DHA`]dON2=WHKJ@XzSMB2
+R2
+R0
+R12
+8V.v
+FV.v
+L0 67
+R6
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R10
+vLUT
+R1
+!i10b 1
+!s100 HghENXD2MZm:ZoQUeiTKJ3
+I:SXbb:JXm_3K1Pz^Km`i00
+R2
+R0
+R3
+R4
+R5
+L0 23
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@l@u@t
+vMorseCode
+R1
+!i10b 1
+!s100 2oe9UzR:7?dibXlV6MK][3
+IQ<BUkBALi<ohE<]@dcoj51
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@morse@code
+vmux2to1
+R1
+!i10b 1
+!s100 aP[1JXnKkES[elD[;d6kh0
+I_d=OKB<]@zMQ:7nEd>];N3
+R2
+R0
+R3
+R4
+R5
+L0 106
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vRateDivider
+R11
+!i10b 1
+!s100 oAfH>>910amWGYDY[EEb92
+I5ogCOL;>RH?X05lU_`GLJ3
+R2
+R0
+R12
+8V.v
+FV.v
+L0 32
+R6
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R10
+n@rate@divider
+vRteDivider
+R1
+!i10b 1
+!s100 Dm8]KG`;L@8NFae`;O3gV0
+IgOUh6B>10U0KgUSXf3zKS1
+R2
+R0
+R3
+R4
+R5
+L0 42
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@rte@divider
+vShifterBit
+R1
+!i10b 1
+!s100 @C<4PAj;bRCTaN_3^IXoM1
+I3cK6WYj2jdYkc9Oc9Ce7n0
+R2
+R0
+R3
+R4
+R5
+L0 83
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@shifter@bit
+vShiftRegister
+R1
+!i10b 1
+!s100 G@_<dBd`l:B4=WMTlbQS<2
+Ic_f4aAd]md2:cB=>f>8F60
+R2
+R0
+R3
+R4
+R5
+L0 58
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@shift@register

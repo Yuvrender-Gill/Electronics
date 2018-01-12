@@ -1,0 +1,18 @@
+
+State Machine - |EnemyPath|collision:c1|Enemy:enemy3|control:m1|current_state
+Name current_state.S_LOAD_C current_state.S_CYCLE_0 current_state.S_LOAD_C_WAIT 
+current_state.S_LOAD_C 0 0 0 
+current_state.S_LOAD_C_WAIT 1 0 1 
+current_state.S_CYCLE_0 1 1 0 
+
+State Machine - |EnemyPath|collision:c1|Enemy:enemy2|control:m1|current_state
+Name current_state.S_LOAD_C current_state.S_CYCLE_0 current_state.S_LOAD_C_WAIT 
+current_state.S_LOAD_C 0 0 0 
+current_state.S_LOAD_C_WAIT 1 0 1 
+current_state.S_CYCLE_0 1 1 0 
+
+State Machine - |EnemyPath|collision:c1|Enemy:enemy1|control:m1|current_state
+Name current_state.S_LOAD_C current_state.S_CYCLE_0 current_state.S_LOAD_C_WAIT 
+current_state.S_LOAD_C 0 0 0 
+current_state.S_LOAD_C_WAIT 1 0 1 
+current_state.S_CYCLE_0 1 1 0 

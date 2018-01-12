@@ -1,0 +1,368 @@
+# OpenFile alu.do
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:04:05 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error: (vlog-13069) alu.v(24): near "[": syntax error, unexpected '[', expecting ')'.
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# End time: 20:04:06 on Oct 04,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:05:59 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): (vlog-2121) alu.v(24): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# ** Error: alu.v(110): (vlog-2884) Bit-select into 'SW' is out of bounds.
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# End time: 20:05:59 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:06:18 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): (vlog-2121) alu.v(24): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# End time: 20:06:18 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:10:02 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): (vlog-2121) alu.v(24): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# End time: 20:10:02 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:10:42 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# 	hex_play
+# End time: 20:10:42 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 20:10:42 on Oct 04,2016
+# Loading work.alu
+# Loading work.function5
+# Loading work.ripplecarry
+# Loading work.fulladder
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:12:36 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error: (vlog-3373) alu.v(33): Range of part-select [0:3] into 'w3' [9:0] is reversed.
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# End time: 20:12:36 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:15:17 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# 	hex_play
+# End time: 20:15:17 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:15:18 on Oct 04,2016, Elapsed time: 0:04:36
+# Errors: 4, Warnings: 0
+# vsim alu 
+# Start time: 20:15:18 on Oct 04,2016
+# Loading work.alu
+# Loading work.function5
+# Loading work.ripplecarry
+# Loading work.fulladder
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:32:41 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# 	hex_play
+# End time: 20:32:41 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:32:41 on Oct 04,2016, Elapsed time: 0:17:23
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 20:32:41 on Oct 04,2016
+# Loading work.alu
+# Loading work.function5
+# Loading work.ripplecarry
+# Loading work.fulladder
+# ** Warning: (vsim-3015) alu.v(22): [PCDPC] - Port size (9) does not match connection size (8) for port 'SW'. The port definition is at: alu.v(100).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/r File: alu.v
+# ** Warning: (vsim-3015) alu.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: alu.v(139).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/r/fa0 File: alu.v
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:34:52 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# 	hex_play
+# End time: 20:34:53 on Oct 04,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 20:34:53 on Oct 04,2016, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 2
+# vsim alu 
+# Start time: 20:34:53 on Oct 04,2016
+# Loading work.alu
+# Loading work.function5
+# Loading work.ripplecarry
+# Loading work.fulladder
+# ** Error: (vsim-3033) alu.v(42): Instantiation of 'hex_display' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: alu.v
+#         Searched libraries:
+#             /h/u5/c5/04/kongxi16/CSC258/Lab3/partIII/work
+# ** Error: (vsim-3033) alu.v(46): Instantiation of 'hex_display' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: alu.v
+#         Searched libraries:
+#             /h/u5/c5/04/kongxi16/CSC258/Lab3/partIII/work
+# ** Error: (vsim-3033) alu.v(50): Instantiation of 'hex_display' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: alu.v
+#         Searched libraries:
+#             /h/u5/c5/04/kongxi16/CSC258/Lab3/partIII/work
+# ** Error: (vsim-3033) alu.v(54): Instantiation of 'hex_display' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: alu.v
+#         Searched libraries:
+#             /h/u5/c5/04/kongxi16/CSC258/Lab3/partIII/work
+# ** Error: (vsim-3033) alu.v(58): Instantiation of 'hex_display' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: alu.v
+#         Searched libraries:
+#             /h/u5/c5/04/kongxi16/CSC258/Lab3/partIII/work
+# ** Error: (vsim-3033) alu.v(62): Instantiation of 'hex_display' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: alu.v
+#         Searched libraries:
+#             /h/u5/c5/04/kongxi16/CSC258/Lab3/partIII/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./alu.do PAUSED at line 5
+OpenFile alu.do
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:36:01 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# End time: 20:36:01 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 20:34:53 on Oct 04,2016
+# Loading work.alu
+# Loading work.function5
+# Loading work.ripplecarry
+# Loading work.fulladder
+# Loading work.hex_play
+# Loading work.zero
+# Loading work.one
+# Loading work.two
+# Loading work.three
+# Loading work.four
+# Loading work.five
+# Loading work.six
+# ** Warning: (vsim-3015) alu.v(22): [PCDPC] - Port size (9) does not match connection size (8) for port 'SW'. The port definition is at: alu.v(100).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/r File: alu.v
+# ** Warning: (vsim-3015) alu.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: alu.v(139).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/r/fa0 File: alu.v
+# ** Warning: (vsim-3015) alu.v(62): [PCDPC] - Port size (4) does not match connection size (5) for port 'SW'. The port definition is at: alu.v(152).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/hex5 File: alu.v
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:41:55 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module function5
+# -- Compiling module ripplecarry
+# -- Compiling module fulladder
+# -- Compiling module hex_play
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# End time: 20:41:55 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:41:56 on Oct 04,2016, Elapsed time: 0:07:03
+# Errors: 6, Warnings: 3
+# vsim alu 
+# Start time: 20:41:56 on Oct 04,2016
+# Loading work.alu
+# Loading work.function5
+# Loading work.ripplecarry
+# Loading work.fulladder
+# Loading work.hex_play
+# Loading work.zero
+# Loading work.one
+# Loading work.two
+# Loading work.three
+# Loading work.four
+# Loading work.five
+# Loading work.six
+# ** Warning: (vsim-3015) alu.v(22): [PCDPC] - Port size (9) does not match connection size (8) for port 'SW'. The port definition is at: alu.v(100).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/r File: alu.v
+# ** Warning: (vsim-3015) alu.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: alu.v(139).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/r/fa0 File: alu.v
+# ** Warning: (vsim-3015) alu.v(62): [PCDPC] - Port size (4) does not match connection size (5) for port 'SW'. The port definition is at: alu.v(152).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/hex5 File: alu.v

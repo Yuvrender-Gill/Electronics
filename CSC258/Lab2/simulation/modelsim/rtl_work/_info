@@ -1,0 +1,186 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u11/c6/01/gillyuv2/CSC258/Lab2/simulation/modelsim
+vfive
+Z1 !s110 1506989397
+!i10b 1
+!s100 PiPIC`>7ozKcSacCbkBT00
+Iz?D`LzN=hhH`B]bTLaYEo0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1506897993
+Z4 8/h/u11/c6/01/gillyuv2/CSC258/Lab2/hex_decoder.v
+Z5 F/h/u11/c6/01/gillyuv2/CSC258/Lab2/hex_decoder.v
+L0 106
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1506989397.000000
+Z8 !s107 /h/u11/c6/01/gillyuv2/CSC258/Lab2/hex_decoder.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/h/u11/c6/01/gillyuv2/CSC258/Lab2|/h/u11/c6/01/gillyuv2/CSC258/Lab2/hex_decoder.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+/h/u11/c6/01/gillyuv2/CSC258/Lab2
+Z12 tCvgOpt 0
+vfour
+R1
+!i10b 1
+!s100 i4^;e[i9zRAn41gTdT<XS3
+IG_bGKWD3O>nXb`0ERH9ah0
+R2
+R0
+R3
+R4
+R5
+L0 96
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vhex_decoder
+R1
+!i10b 1
+!s100 l:D8STT^ZMn[jb:P;IZjH0
+ITH^lLA12QZ?k3VYEeaHea2
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vone
+R1
+!i10b 1
+!s100 76T>QmmX<>DTOFB^9i8>o1
+II^1D74T1^OPdBE1k[Il4f3
+R2
+R0
+R3
+R4
+R5
+L0 66
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vsix
+R1
+!i10b 1
+!s100 4c@fV[VAJ5TT573f[_Vjk1
+I0f2;3z2Q_:QZ7<OHl0c8f1
+R2
+R0
+R3
+R4
+R5
+L0 116
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vthree
+R1
+!i10b 1
+!s100 T[g?UL=`Dc5:7C3P?U<W42
+IAbb=g?89=U@?eM9;jm?1H3
+R2
+R0
+R3
+R4
+R5
+L0 86
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vtwo
+R1
+!i10b 1
+!s100 BFUR<?jQcNJK[PnkZPGDh2
+IJ_2zgLR7F>n[l4;^[1XA[2
+R2
+R0
+R3
+R4
+R5
+L0 76
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vzero
+R1
+!i10b 1
+!s100 B;j_`X91Y8dM6k5al9cnY2
+IdglB1hDEcMDli1Gc=hEjc2
+R2
+R0
+R3
+R4
+R5
+L0 56
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

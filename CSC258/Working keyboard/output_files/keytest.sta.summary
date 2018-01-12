@@ -1,0 +1,245 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.879
+TNS   : -8.553
+
+Type  : Slow 1100mV 85C Model Setup 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : -2.495
+TNS   : -39.667
+
+Type  : Slow 1100mV 85C Model Setup 'keyboard:comb_36|clock'
+Slack : -1.884
+TNS   : -14.428
+
+Type  : Slow 1100mV 85C Model Setup 'keyboard:comb_36|scan_ready'
+Slack : -1.164
+TNS   : -12.060
+
+Type  : Slow 1100mV 85C Model Hold 'keyboard:comb_36|scan_ready'
+Slack : 0.346
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'keyboard:comb_36|clock'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : 0.544
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'keyboard:comb_36|ready_set'
+Slack : -3.627
+TNS   : -3.627
+
+Type  : Slow 1100mV 85C Model Removal 'keyboard:comb_36|ready_set'
+Slack : 3.074
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : -0.394
+TNS   : -13.870
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'keyboard:comb_36|clock'
+Slack : -0.394
+TNS   : -7.144
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'keyboard:comb_36|scan_ready'
+Slack : -0.394
+TNS   : -6.146
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -1.766
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'keyboard:comb_36|ready_set'
+Slack : -0.394
+TNS   : -0.510
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.620
+TNS   : -7.662
+
+Type  : Slow 1100mV 0C Model Setup 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : -2.431
+TNS   : -38.114
+
+Type  : Slow 1100mV 0C Model Setup 'keyboard:comb_36|clock'
+Slack : -1.894
+TNS   : -14.248
+
+Type  : Slow 1100mV 0C Model Setup 'keyboard:comb_36|scan_ready'
+Slack : -1.132
+TNS   : -11.758
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Slow 1100mV 0C Model Hold 'keyboard:comb_36|scan_ready'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : 0.503
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'keyboard:comb_36|clock'
+Slack : 0.551
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'keyboard:comb_36|ready_set'
+Slack : -3.668
+TNS   : -3.668
+
+Type  : Slow 1100mV 0C Model Removal 'keyboard:comb_36|ready_set'
+Slack : 3.162
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : -0.394
+TNS   : -13.852
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'keyboard:comb_36|clock'
+Slack : -0.394
+TNS   : -7.186
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'keyboard:comb_36|scan_ready'
+Slack : -0.394
+TNS   : -6.158
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -1.843
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'keyboard:comb_36|ready_set'
+Slack : -0.394
+TNS   : -0.513
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.472
+TNS   : -7.037
+
+Type  : Fast 1100mV 85C Model Setup 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : -1.380
+TNS   : -15.840
+
+Type  : Fast 1100mV 85C Model Setup 'keyboard:comb_36|clock'
+Slack : -0.846
+TNS   : -5.910
+
+Type  : Fast 1100mV 85C Model Setup 'keyboard:comb_36|scan_ready'
+Slack : -0.505
+TNS   : -4.484
+
+Type  : Fast 1100mV 85C Model Hold 'keyboard:comb_36|scan_ready'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'keyboard:comb_36|clock'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'keyboard:comb_36|ready_set'
+Slack : -1.753
+TNS   : -1.753
+
+Type  : Fast 1100mV 85C Model Removal 'keyboard:comb_36|ready_set'
+Slack : 1.561
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.316
+TNS   : -0.489
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'keyboard:comb_36|scan_ready'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'keyboard:comb_36|clock'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'keyboard:comb_36|ready_set'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.962
+TNS   : -5.637
+
+Type  : Fast 1100mV 0C Model Setup 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : -1.220
+TNS   : -12.714
+
+Type  : Fast 1100mV 0C Model Setup 'keyboard:comb_36|clock'
+Slack : -0.794
+TNS   : -4.875
+
+Type  : Fast 1100mV 0C Model Setup 'keyboard:comb_36|scan_ready'
+Slack : -0.413
+TNS   : -3.567
+
+Type  : Fast 1100mV 0C Model Hold 'keyboard:comb_36|scan_ready'
+Slack : -0.046
+TNS   : -0.104
+
+Type  : Fast 1100mV 0C Model Hold 'keyboard:comb_36|clock'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.108
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'keyboard:comb_36|ready_set'
+Slack : -1.694
+TNS   : -1.694
+
+Type  : Fast 1100mV 0C Model Removal 'keyboard:comb_36|ready_set'
+Slack : 1.509
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.323
+TNS   : -0.498
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'keyboard:comb_36|scan_ready'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'keyboard:comb_36|clock'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'keyboard:comb_36|ready_set'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'keyboard:comb_36|keyboard_clk_filtered'
+Slack : 0.150
+TNS   : 0.000
+
+------------------------------------------------------------

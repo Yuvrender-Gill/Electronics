@@ -1,0 +1,262 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/h/u5/c5/04/kongxi16/CSC258/Lab3/partIII
+valu
+Z0 !s110 1507231529
+!i10b 1
+!s100 BiDo?TVHzijK7V<W?JKiT2
+IfDj^bH9532zH47eEcS5Na3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/h/u11/c6/01/gillyuv2/CSC258/CSC258-master/Lab3/partIII
+Z3 w1480872059
+Z4 8alu.v
+Z5 Falu.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1507231528.000000
+Z8 !s107 alu.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|alu.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vfive
+R0
+!i10b 1
+!s100 Q8HB4d4A]_EdSNZSdmT]80
+IG:JK]a_44^ZcR^8UL3faf3
+R1
+R2
+R3
+R4
+R5
+L0 257
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vfour
+R0
+!i10b 1
+!s100 keT`oUV74gE]_@hDm6U4X3
+IASZT[<gK1Y2aEP;R[c3962
+R1
+R2
+R3
+R4
+R5
+L0 247
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vfulladder
+R0
+!i10b 1
+!s100 F`UIZ>4b][K<K?`K4TJCz0
+IA]JBC137bWm8;0elz^i590
+R1
+R2
+R3
+R4
+R5
+L0 139
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vfunction5
+R0
+!i10b 1
+!s100 i<DAlF2`ojfzOmad0mX^k1
+ISYZW9@BRi=<n<W`BIdXo`0
+R1
+R2
+R3
+R4
+R5
+L0 70
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhex_play
+R0
+!i10b 1
+!s100 :AiEWoeTO=gbd_^jFBmYn2
+IZ^H;2faa?YedC218b;P<`0
+R1
+R2
+R3
+R4
+R5
+L0 152
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vone
+R0
+!i10b 1
+!s100 D30<Cejc38jJ=POMLW4d01
+I3Tzo@K]=]h3DLjW7;Tf4W3
+R1
+R2
+R3
+R4
+R5
+L0 217
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vripplecarry
+R0
+!i10b 1
+!s100 C2[cJ:Zo2G`UYeOinE;Cz2
+IO7j=h9[l4KEG0l0Xg@G<M2
+R1
+R2
+R3
+R4
+R5
+L0 100
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsix
+R0
+!i10b 1
+!s100 HL@Ddfk8>c1HRHUAZdf_m2
+I?@6g<7@8fHEWf5KDXY4i10
+R1
+R2
+R3
+R4
+R5
+L0 267
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vthree
+R0
+!i10b 1
+!s100 ALS2P<WhVZeY`ml_LJcG21
+I=;70H828hSPoE;<c9S^h62
+R1
+R2
+R3
+R4
+R5
+L0 237
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtwo
+R0
+!i10b 1
+!s100 e6[4@DcSBV0`?zF?DPMGi2
+I2j3PTBo7DklCCnMV;[PWh2
+R1
+R2
+R3
+R4
+R5
+L0 227
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vzero
+R0
+!i10b 1
+!s100 ]CTd]iDJmPSmG?m>ELUNJ3
+IS:A2SZ=lSC3J<0d4e_Zb82
+R1
+R2
+R3
+R4
+R5
+L0 207
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

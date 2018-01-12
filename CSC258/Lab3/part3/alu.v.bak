@@ -1,0 +1,212 @@
+// Implementing ALU
+module alu();
+	always @(*)
+	begin
+		case ()
+		endcase
+	end
+endmodule
+
+//=============================================================
+// Functions
+module functions
+
+	
+	
+	
+	
+	
+	
+//=============================================================
+// A 4-bit ripple full adder implementation
+
+module ripple_full_adder(SW, LEDR);
+	input [9:0] SW;
+	output [9:0] LEDR;
+	
+	wire connection_1; // Connectes FA0 to FA1
+	wire connection_2; // Connectes FA1 to FA2
+	wire connection_3; // Connectes FA2 to FA3
+	
+	// Instanciating the full adders to get the ripple adder
+	
+	// Instanciating FA0
+	full_adder FA0(
+					.A(SW[0]),
+					.B(SW[4]),
+					.cin(SW[8]),
+					.S(LEDR[0]),
+					.cout(connection_1)
+					); 
+					
+	// Instanciating FA1
+	full_adder FA1(
+					.A(SW[1]),
+					.B(SW[5]),
+					.cin(connection_1),
+					.S(LEDR[1]),
+					.cout(connection_2)
+					);
+					
+	// Instanciating FA2	
+	full_adder FA2(
+					.A(SW[2]),
+					.B(SW[6]),
+					.cin(connection_2),
+					.S(LEDR[2]),
+					.cout(connection_3)
+					);
+					
+	// Instanciating FA3				
+	full_adder FA3(
+					.A(SW[3]),
+					.B(SW[7]),
+					.cin(connection_3),
+					.S(LEDR[3]),
+					.cout(LEDR[4])
+					);
+					
+endmodule
+
+// A full adder implementation  
+module full_adder(A, B, cin, S, cout);
+	input A;
+	input B;
+	input cin;
+	output S;
+	output cout;
+	
+	
+	assign S = A ^ B ^ cin;
+	// Using basic gates 
+	// S = ((~A) & B & (~cin)) | (A & (~B) & (~cin)) | ((~A) & (~B) & cin) | (A & B & cin);
+	assign cout = (A & B) | (B & cin) | (A & cin);
+
+endmodule 
+	
+// ======================================================================
+// Hex display code
+module hex_decoder(SW, HEX);
+	input [3:0] SW;
+	output [6:0] HEX;
+	
+	zero m1(
+		.a(SW[0]),
+		.b(SW[1]),
+		.c(SW[2]),
+		.d(SW[3]),
+		.m(HEX[0])
+		);
+	one m2(
+		.a(SW[0]),
+		.b(SW[1]),
+		.c(SW[2]),
+		.d(SW[3]),
+		.m(HEX[1])
+		);
+	two m3(
+		.a(SW[0]),
+		.b(SW[1]),
+		.c(SW[2]),
+		.d(SW[3]),
+		.m(HEX[2])
+		);
+	three m4(
+		.a(SW[0]),
+		.b(SW[1]),
+		.c(SW[2]),
+		.d(SW[3]),
+		.m(HEX[3])
+		);
+   four m5(
+		.a(SW[0]),
+		.b(SW[1]),
+		.c(SW[2]),
+		.d(SW[3]),
+		.m(HEX[4])
+		);
+	five m6(
+		.a(SW[0]),
+		.b(SW[1]),
+		.c(SW[2]),
+		.d(SW[3]),
+		.m(HEX[5])
+		);
+	six m7(
+		.a(SW[0]),
+		.b(SW[1]),
+		.c(SW[2]),
+		.d(SW[3]),
+		.m(HEX[6])
+		);
+endmodule
+
+module zero(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((b & c) | (~a & d) | (~a & ~c) | (~b & ~c & d) | (a & c & ~d) | (b & ~c & ~d));
+endmodule
+
+module one(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((~c & ~a) | (~c & ~d) | (d & a & ~b) | (~d & a & b) | (~d & ~a & ~b));
+endmodule
+
+module two(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((c & ~d) | (~c & d) | (a & ~c) | (a & ~b) | (~d & ~a & ~b));
+endmodule
+
+module three(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((c & a & ~b) | (c & ~a & b) | (d & ~a & ~b) | (~c & ~a & ~b) | (~c & a & b) | (b & ~c & ~d));
+endmodule
+
+module four(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+
+   assign m = ~((b & d) | (~a & d) | (~c & ~a) | (c & d & ~b) | (~d & ~a & b));
+endmodule
+
+module five(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((b & d) | (~a & d) | (~a & c) | (~a & ~b) | (~b & c & ~d) | (~b & ~c & d));
+endmodule
+
+module six(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((d & a) | (d & b) | (~c & b) | (~a & c & ~d) | (~b & c & ~d) | (~b & ~c & d));
+endmodule 

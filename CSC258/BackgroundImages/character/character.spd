@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/altera_up_character_lcd_communication.v"
+   type="VERILOG"
+   library="character_lcd_0" />
+ <file
+   path="simulation/submodules/altera_up_character_lcd_initialization.v"
+   type="VERILOG"
+   library="character_lcd_0" />
+ <file
+   path="simulation/submodules/character_character_lcd_0.v"
+   type="VERILOG"
+   library="character_lcd_0" />
+ <file path="simulation/character.v" type="VERILOG" />
+ <topLevel name="character" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

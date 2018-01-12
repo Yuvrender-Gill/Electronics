@@ -1,0 +1,20 @@
+# system info character on 2017.11.30.15:20:40
+system_info:
+name,value
+DEVICE,5CSEMA5F31C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1512073239
+#
+#
+# Files generated for character on 2017.11.30.15:20:40
+files:
+filepath,kind,attributes,module,is_top
+simulation/character.v,VERILOG,,character,true
+simulation/submodules/altera_up_character_lcd_communication.v,VERILOG,,character_character_lcd_0,false
+simulation/submodules/altera_up_character_lcd_initialization.v,VERILOG,,character_character_lcd_0,false
+simulation/submodules/character_character_lcd_0.v,VERILOG,,character_character_lcd_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+character.character_lcd_0,character_character_lcd_0

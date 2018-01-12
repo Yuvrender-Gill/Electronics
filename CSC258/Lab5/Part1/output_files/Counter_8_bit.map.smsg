@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at Counter_8_bit.v(7): object "HEX0" differs only in case from object "hex0" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab5/Part1/Counter_8_bit.v Line: 7
+Info (10281): Verilog HDL Declaration information at Counter_8_bit.v(7): object "HEX1" differs only in case from object "hex1" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab5/Part1/Counter_8_bit.v Line: 7

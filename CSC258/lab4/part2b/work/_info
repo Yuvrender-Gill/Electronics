@@ -1,0 +1,284 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u11/c6/01/gillyuv2/CSC258/lab4/part2b
+valu_i
+Z1 !s110 1507840512
+!i10b 1
+!s100 80n08H=Vfa8IoClXN7iG]3
+I=^P=[LdjSSmag_k02L??H0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1507825341
+Z4 8aluregister.v
+Z5 Faluregister.v
+L0 67
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1507840512.000000
+Z8 !s107 aluregister.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|aluregister.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+valuregister
+R1
+!i10b 1
+!s100 ljh;BZ1mla8kTSVecnbF73
+I=?``JlDPVTV;cj7C7mKiJ0
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vfull_adder
+R1
+!i10b 1
+!s100 0mQ[HUQj:W^9R6JX1;bI20
+IZ]903b_@ZUnc`2Q3UZbK80
+R2
+R0
+R3
+R4
+R5
+L0 170
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhexDisplay
+R1
+!i10b 1
+!s100 f<Xe4i4c55Uoc3?RF<?S>0
+IX;@0PLNiJHgBQ>kgf_7?=3
+R2
+R0
+R3
+R4
+R5
+L0 188
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nhex@display
+vregister
+R1
+!i10b 1
+!s100 [DF6_:ANP0MXDi5J`okQk1
+Inj29S5`QbC2aSAcAXPTZe0
+R2
+R0
+R3
+R4
+R5
+L0 47
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vripple_full_adder
+R1
+!i10b 1
+!s100 ?>F;?T:S`nN=@2bYg8N;51
+IK1caGGN6iEQbf]FgTzLHD0
+R2
+R0
+R3
+R4
+R5
+L0 119
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsegment0
+R1
+!i10b 1
+!s100 @MTnUKo5<NkHW>UQ<hN<f3
+IVVHSFHh4:ThOz8OUTfYVA2
+R2
+R0
+R3
+R4
+R5
+L0 250
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsegment1
+R1
+!i10b 1
+!s100 11V3;jdnJAMN1EmDARVXP0
+IFkI]Km42K;[;c8VSg7MCT2
+R2
+R0
+R3
+R4
+R5
+L0 259
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsegment2
+R1
+!i10b 1
+!s100 ;_lH1T7XD`1bzXCYHHm]51
+IUP@YQkf4i9zlQA<HAl2UJ1
+R2
+R0
+R3
+R4
+R5
+L0 268
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsegment3
+R1
+!i10b 1
+!s100 e2LmKQSU:TlLhf8G_jd^12
+I^kUkVT@:9LK8AAJ^E?J@61
+R2
+R0
+R3
+R4
+R5
+L0 277
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsegment4
+R1
+!i10b 1
+!s100 f3<<;OI40m`HHi06HdDhA3
+IaWKRDlEWdOaXJF9FYKfg23
+R2
+R0
+R3
+R4
+R5
+L0 286
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsegment5
+R1
+!i10b 1
+!s100 @82R@mI<Co4Y2H=L1n5OL2
+IcO4P:]eahd?GB[_h?EcV@1
+R2
+R0
+R3
+R4
+R5
+L0 295
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsegment6
+R1
+!i10b 1
+!s100 5>O<`gaKm<5F:9;kROj2G0
+I[<jefnY]TZYWMCb41Cgch1
+R2
+R0
+R3
+R4
+R5
+L0 304
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

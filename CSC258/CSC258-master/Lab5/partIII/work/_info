@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/h/u5/c5/04/kongxi16/CSC258/Lab5/partIII
+vlut
+Z0 !s110 1508449924
+!i10b 1
+!s100 ci5GDTAfLH;f^8LlSWbal1
+IBfoPgUbfFF;Y@UzbdW6KR1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/h/u11/c6/01/gillyuv2/CSC258/CSC258-master/Lab5/partIII
+Z3 w1508442091
+Z4 8morseencoder.v
+Z5 Fmorseencoder.v
+L0 84
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1508449924.000000
+Z8 !s107 morseencoder.v|
+Z9 !s90 -reportprogress|300|morseencoder.v|
+!i113 1
+Z10 tCvgOpt 0
+vmorse
+R0
+!i10b 1
+!s100 a`=2C[``nfW^1?Gf0[e^g3
+I0gS0;DKllMTL^a3OFR^LD2
+R1
+R2
+R3
+R4
+R5
+L0 14
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vmorseencoder
+R0
+!i10b 1
+!s100 ;VV?jT=OlgE8DHE?:m]PE0
+I`T2i>6FVBZU`AfmjzdM<G2
+R1
+R2
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vratedivider
+R0
+!i10b 1
+!s100 >zml4BJHDfjkDb6[z1CB32
+I89`GCeN1eTT4nBn]eW^K82
+R1
+R2
+R3
+R4
+R5
+L0 105
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vshifter
+R0
+!i10b 1
+!s100 bQNR]56UkcH33Amb6g@R<3
+ILZdQa5X?5P5hQV;n9H1@n0
+R1
+R2
+R3
+R4
+R5
+L0 54
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

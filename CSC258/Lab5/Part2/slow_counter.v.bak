@@ -1,0 +1,224 @@
+// top level module for connecting the verilog code with the FPGA code 
+// clock_counter module 
+
+module clock_counter(SW, HEX0, CLOCK_50);
+	
+	input [9:0] SW;
+	input CLOCK_50;
+	output [6:0] HEX0;
+	wire [3:0] rate_out;
+	rate_divider(.d(SW[7:4]), .clock(CLOCK_50), .reset_n(SW[9]), .par_load(SW[3]), .enable(SW[2]), .select(SW[1:0]), .q(rate_out[3:0]);
+	
+	hexDisplay hex(.HEX_in(rate_out[3:0]), .HEX_out(HEX0[6:0]));
+endmodule
+
+module rate_divider(d, clock, reset_n, par_load, enable, select, q);
+	input [27:0] d;
+	input [2:0] select;
+	input clock reset_n, par_load, enable;
+	output [3:0] q;
+	wire [27:0] w1, w2, w3;
+	
+	reg [3:0] Out;
+	
+	RDcounter case2(.d({2'b00, 26'd4999999}), .clock(clock), .reset_n(reset_n), .enable(enable), .q(w1));
+	RDcounter case3(.d({1'b0, 27'd99999998}), .clock(clock), .reset_n(reset_n), .enable(enable), .q(w2);
+	RDcounter case4(.d({29'd199999996}), .clock(clock), .reser_n(reset_n), .enable(enable), .q(w3);
+	
+	display_counter disp_count(.d(Out), .clock(clock), .reset_n(reset_n), .par_load(par_load), .enable(enable), .q(q[3:0]));  
+	
+	always @(*)
+		begin
+			case(select)
+				2'b00: Out = enable;
+				2'b01: Out = (w1 == 0) ? 1 :0;
+				2'b10: Out = (w2 == 0) ? 1 :0;
+				2'b11: Out = (w3 == 0) ? 1 :0;
+			endcase 
+		end
+endmodule
+
+
+module display_counter(d, clock, reset_n, par_load, enable, q);
+	input [3:0] d;
+	input clock;
+	input reset_n;
+	input par_load, enable;
+	output [3:0] q;
+	
+	reg [3:0] q;
+	
+	always @(posedge clock, negedge reset_n)
+	begin 
+		if (reset_n == 1'b0)
+			q <= 0;
+		else if (par_load == 1'b1)
+			q <= d;
+		else if (enable = 1'b1)
+			begin
+				if (q == 4'b1111)
+					q <= 0;
+				else 
+					q <= q + 1'b1;
+			end
+	end
+endmodule 
+
+//========================================================
+// Rate divider counter
+
+module RDcounter(d, clock, reset_n, enable, q);
+	input [27:0] d;
+	input clock;
+	input reset_n;
+	input enable;
+	output [27:0] q;
+	
+	reg [27:0] q;
+	
+	always @(posedge clock)
+	begin 
+		if (reset_n == 1'bo)
+			q <= 0;
+		else if (enable = 1'b1)
+			begin
+				if (q == 0)
+					q <= d;
+				else 
+					q <= q - 1'b1;
+			end
+	end
+endmodule 
+
+
+//========================================================
+// HEX Display 
+
+// Hex display code==========================================x=====================================x
+module hexDisplay(HEX_in, HEX_out);
+	input [3:0] HEX_in;
+	output [6:0] HEX_out;
+	
+	segment0 ZERO(
+		.c3(HEX_in[3]),
+		.c2(HEX_in[2]),
+		.c1(HEX_in[1]),
+		.c0(HEX_in[0]),
+		.x(HEX_out[0])
+	);
+	
+	segment1 ONE(
+		.c3(HEX_in[3]),
+		.c2(HEX_in[2]),
+		.c1(HEX_in[1]),
+		.c0(HEX_in[0]),
+		.x(HEX_out[1])
+	);
+	
+	segment2 TWO(
+		.c3(HEX_in[3]),
+		.c2(HEX_in[2]),
+		.c1(HEX_in[1]),
+		.c0(HEX_in[0]),
+		.x(HEX_out[2])
+	);
+	
+	segment3 THREE(
+		.c3(HEX_in[3]),
+		.c2(HEX_in[2]),
+		.c1(HEX_in[1]),
+		.c0(HEX_in[0]),
+		.x(HEX_out[3])
+	);
+	
+	segment4 FOUR(
+		.c3(HEX_in[3]),
+		.c2(HEX_in[2]),
+		.c1(HEX_in[1]),
+		.c0(HEX_in[0]),
+		.x(HEX_out[4])
+	);
+	
+	segment5 FIVE(
+		.c3(HEX_in[3]),
+		.c2(HEX_in[2]),
+		.c1(HEX_in[1]),
+		.c0(HEX_in[0]),
+		.x(HEX_out[5])
+	);
+	
+	segment6 SIX(
+		.c3(HEX_in[3]),
+		.c2(HEX_in[2]),
+		.c1(HEX_in[1]),
+		.c0(HEX_in[0]),
+		.x(HEX_out[6])
+	);
+endmodule
+
+// Segments Code ========================x==============================x======================================
+module segment0(c3, c2, c1, c0, x);
+	input c3;
+	input c2;
+	input c1;
+	input c0;
+	output x;
+	assign x = ~((c3 | c2 | c1 | ~c0) & (c3 | ~c2 | c1 | c0) & (~c3 | ~c2 | c1 | ~c0) & (~c3 | c2 | ~c1 | ~c0));
+endmodule
+
+module segment1(c3, c2, c1, c0, x);
+	input c3;
+	input c2;
+	input c1;
+	input c0;
+	output x;
+	assign x = ~((~c1 | ~c0 | ~c3) & (~c1 | c0 | ~c2) & (c1 | c0 | ~c3 | ~c2) & (c1 | ~c0 | c3 | ~c2));
+endmodule
+
+module segment2(c3, c2, c1, c0, x);
+	input c3;
+	input c2;
+	input c1;
+	input c0;
+	output x;
+	assign x = ~((~c3 | ~c2 | c1 | c0) & (~c1 | ~c3 | ~c2) & (c3 | c2 | ~c1 | c0));
+endmodule
+
+module segment3(c3, c2, c1, c0, x);
+	input c3;
+	input c2;
+	input c1;
+	input c0;
+	output x;
+	assign x = ~((c3 | ~c2 | c1 | c0) & (c2 | c1 | ~c0) & (~c2 | ~c1 | ~c0) & (~c3 | c2 | ~c1 | c0));
+endmodule
+
+module segment4(c3, c2, c1, c0, x);
+	input c3;
+	input c2;
+	input c1;
+	input c0;
+	output x;
+	assign x = ~((c1 | c0 | c3 | ~c2) & (c2 | c1 | ~c0) & (~c0 | c3));
+endmodule
+
+module segment5(c3, c2, c1, c0, x);
+	input c3;
+	input c2;
+	input c1;
+	input c0;
+	output x;
+	assign x = ~((~c0 | c3 | c2) & (c3 | ~c1 | ~c0) & (~c1 | c3 | c2) & (c1 | ~c0 | ~c3 | ~c2));
+endmodule
+
+module segment6(c3, c2, c1, c0, x);
+	input c3;
+	input c2;
+	input c1;
+	input c0;
+	output x;
+	assign x = ~((~c3 | ~c2 | c1 | c0) & (c1 | c3 | c2) & (~c1 | ~c0 | c3 | ~c2));
+endmodule
+
+//============================x===========================================x=========================================x
+// END of the module. 

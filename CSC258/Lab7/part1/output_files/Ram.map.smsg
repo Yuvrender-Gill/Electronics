@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at Ram.v(6): object "HEX0" differs only in case from object "hex0" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab7/part1/Ram.v Line: 6
+Info (10281): Verilog HDL Declaration information at Ram.v(6): object "HEX2" differs only in case from object "hex2" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab7/part1/Ram.v Line: 6
+Info (10281): Verilog HDL Declaration information at Ram.v(6): object "HEX4" differs only in case from object "hex4" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab7/part1/Ram.v Line: 6
+Info (10281): Verilog HDL Declaration information at Ram.v(6): object "HEX5" differs only in case from object "hex5" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab7/part1/Ram.v Line: 6

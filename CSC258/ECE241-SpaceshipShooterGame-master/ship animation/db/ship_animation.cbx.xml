@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ship_animation">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ship_animation|explosion:explosion_rom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7581.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ship_animation|game_over:game_over_rom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_4781.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ship_animation|start_screen:restart_rom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ej81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ship_animation|animation:anirom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_9k81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ship_animation|enemy_ram:enemy1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_emr1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ship_animation|vga_adapter:VGA|altsyncram:VideoMemory" CBX_FILE_NAME="altsyncram_ncg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ship_animation|you_win:winrom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ec81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

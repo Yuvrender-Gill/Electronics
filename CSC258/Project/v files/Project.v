@@ -1,0 +1,121 @@
+// Part 2 skeleton
+
+module phase1
+	(
+		CLOCK_50,						//	On Board 50 MHz
+		// Your inputs and outputs here
+        KEY,
+        SW,
+		// The ports below are for the VGA output.  Do not change.
+		VGA_CLK,   						//	VGA Clock
+		VGA_HS,							//	VGA H_SYNC
+		VGA_VS,							//	VGA V_SYNC
+		VGA_BLANK_N,						//	VGA BLANK
+		VGA_SYNC_N,						//	VGA SYNC
+		VGA_R,   						//	VGA Red[9:0]
+		VGA_G,	 						//	VGA Green[9:0]
+		VGA_B   						//	VGA Blue[9:0]
+	);
+//=============================================================================================
+//=============================================================================================
+	input			CLOCK_50;				//	50 MHz
+	input   [9:0]   SW;
+	input   [3:0]   KEY;
+
+	// Declare your inputs and outputs here
+	// Do not change the following outputs
+	output			VGA_CLK;   				//	VGA Clock      
+	output			VGA_HS;					//	VGA H_SYNC
+	output			VGA_VS;					//	VGA V_SYNC
+	output			VGA_BLANK_N;				//	VGA BLANK
+	output			VGA_SYNC_N;				//	VGA SYNC
+	output	[9:0]	VGA_R;   				//	VGA Red[9:0]
+	output	[9:0]	VGA_G;	 				//	VGA Green[9:0]
+	output	[9:0]	VGA_B;   				//	VGA Blue[9:0]
+	
+	
+	wire resetn;
+	assign resetn = KEY[0];
+	
+	// Create the colour, x, y and writeEn wires that are inputs to the controller.
+	wire [2:0] colour;
+	wire [7:0] x;
+	wire [6:0] y;
+	wire writeEn;
+	wire enable,ld_x,ld_y,ld_c;
+
+//=============================================================================================
+	/* Instanciating the required modules*/
+
+//=============================================================================================
+	// Defining all the modules that are needed 
+	
+	
+	
+	vga_adapter VGA(
+			.resetn(resetn),
+			.clock(CLOCK_50),
+			.colour(colour),
+			.x(x),
+			.y(y),
+			.plot(writeEn),
+			/* Signals for the DAC to drive the monitor. */
+			.VGA_R(VGA_R),
+			.VGA_G(VGA_G),
+			.VGA_B(VGA_B),
+			.VGA_HS(VGA_HS),
+			.VGA_VS(VGA_VS),
+			.VGA_BLANK(VGA_BLANK_N),
+			.VGA_SYNC(VGA_SYNC_N),
+			.VGA_CLK(VGA_CLK));
+		defparam VGA.RESOLUTION = "320x240";
+		defparam VGA.MONOCHROME = "FALSE";
+		
+		
+		defparam VGA.BITS_PER_COLOUR_CHANNEL = 1;
+		defparam VGA.BACKGROUND_IMAGE = "background.colour.mif";
+			
+	
+	// Controller
+	keyboard_controller key_controller();
+	
+	// Object roms
+	target target_rom1();
+	enemy enemy_();
+	horrible_enemy enemy2();
+	
+	//Enemy animation top and bottom
+	enemyTop enemy_top();
+	enemyBottom enemy_top();
+	
+	// Main physics of the game
+	grounded grounded();
+	
+	//Extra feature to be implemented.
+	health_kit health_kit();
+	
+	// Score and life display on screen
+	score score_rom1();
+	life life_();
+	
+	// Collision detector of the target
+	collision collision();
+	
+	// Game logic
+	gameFSM game_FSM();
+
+	// Game over and game logo to be displayed on the screen. 
+	gameover game_over();
+	game_logo(); 
+	
+
+	
+	
+endmodule
+
+		
+
+
+
+		
+	

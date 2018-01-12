@@ -1,0 +1,184 @@
+//=====================================================
+// Implemnting the top module to connect the counter to the FPGA board. ]
+
+module Counter_8_bit(SW, KEY, HEX0, HEX1);
+	input [9:0] SW;
+	input [3:0] KEY;
+	output [6:0] HEX0, HEX1;
+	wire [7:0] out;
+	
+	counter c1(.enable(SW[1]), .clock(KEY[0]), .clear_b(SW[0]), .Q(out)); // Instanciating the counter
+	hex_display hex0(.in(out[3:0]), .out[HEX0]); // Connecting the lower four bits to the HEX0
+	hex_display hex0(.in(out[7:4]), .out[HEX1]); // Connecting the upper four bits to the HEX1
+	
+endmodule 
+	
+
+//======================================================
+// Implementing the counter
+
+module counter(enable, clock, clear_b, Q);
+	input enable, clock, clear_b, Q;
+	output [7:0] Q;
+	wire q1, q2, q3, q4, q5, q6, q7, q8;
+	assign q1, q2, q3, q4, q5, q6, q7 = Q[0], Q[1], Q[2], Q[3], Q[4], Q[5], Q[6], Q[7], Q[8];
+	
+	t_flfipflop t1(.t(enable), .clock(clock), .clear_b(clear_b) ,.q(q1));
+	t_flfipflop t2(.t(enable & q1), .clock(clock), .clear_b(clear_b) ,.q(q2));
+	t_flfipflop t3(.t(enable & q1 & q2), .clock(clock), .clear_b(clear_b) ,.q(q3));
+	t_flfipflop t4(.t(enable & q1 & q2 & q3), .clock(clock), .clear_b(clear_b) ,.q(q4));
+	t_flfipflop t5(.t(enable & q1 & q2 & q3 & q4), .clock(clock), .clear_b(clear_b) ,.q(q5));
+	t_flfipflop t6(.t(enable & q1 & q2 & q3 & q4 & q5), .clock(clock), .clear_b(clear_b) ,.q(q6));
+	t_flfipflop t7(.t(enable & q1 & q2 & q3 & q4 & q5 & q6), .clock(clock), .clear_b(clear_b) ,.q(q7));
+	t_flfipflop t8(.t(enable & q1 & q2 & q3 & q4 & q5 & q6 & q7), .clock(clock), .clear_b(clear_b) ,.q(q8));
+	
+endmodule 
+
+//======================================================
+//Implementing a t_flipflop
+
+module t_flipflop(t, clock, clear_b, q);
+		input d; // Data input fr the given register
+		input clock; //Clock signal
+		input reset_n; //to reset the register 
+		output q; // output of the register. 
+		
+		reg q;
+		
+		always @(posedge clock, negedge clear_b)
+		
+		begin
+			if (clear_b == 1'b0)
+				q <= 0;
+			else
+				q <= q ^ t;
+		end
+endmodule 
+
+//========================================================
+// HEX Display 
+
+module hex_display(in, out);
+	input [3:0] in;
+	output [6:0] out;
+	
+	zero m1(
+		.a(in[0]),
+		.b(in[1]),
+		.c(in[2]),
+		.d(in[3]),
+		.m(out[0])
+		);
+	one m2(
+		.a(in[0]),
+		.b(in[1]),
+		.c(in[2]),
+		.d(in[3]),
+		.m(out[1])
+		);
+	two m3(
+		.a(in[0]),
+		.b(in[1]),
+		.c(in[2]),
+		.d(in[3]),
+		.m(out[2])
+		);
+	three m4(
+		.a(in[0]),
+		.b(in[1]),
+		.c(in[2]),
+		.d(in[3]),
+		.m(out[3])
+		);
+   four m5(
+		.a(in[0]),
+		.b(in[1]),
+		.c(in[2]),
+		.d(in[3]),
+		.m(out[4])
+		);
+	five m6(
+		.a(in[0]),
+		.b(in[1]),
+		.c(in[2]),
+		.d(in[3]),
+		.m(out[5])
+		);
+	six m7(
+		.a(in[0]),
+		.b(in[1]),
+		.c(in[2]),
+		.d(in[3]),
+		.m(out[6])
+		);
+endmodule
+
+module zero(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((b & c) | (~a & d) | (~a & ~c) | (~b & ~c & d) | (a & c & ~d) | (b & ~c & ~d));
+endmodule
+
+module one(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((~c & ~a) | (~c & ~d) | (d & a & ~b) | (~d & a & b) | (~d & ~a & ~b));
+endmodule
+
+module two(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((c & ~d) | (~c & d) | (a & ~c) | (a & ~b) | (~d & ~a & ~b));
+endmodule
+
+module three(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((c & a & ~b) | (c & ~a & b) | (d & ~a & ~b) | (~c & ~a & ~b) | (~c & a & b) | (b & ~c & ~d));
+endmodule
+
+module four(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+
+   assign m = ~((b & d) | (~a & d) | (~c & ~a) | (c & d & ~b) | (~d & ~a & b));
+endmodule
+
+module five(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((b & d) | (~a & d) | (~a & c) | (~a & ~b) | (~b & c & ~d) | (~b & ~c & d));
+endmodule
+
+module six(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = ~((d & a) | (d & b) | (~c & b) | (~a & c & ~d) | (~b & c & ~d) | (~b & ~c & d));
+endmodule 

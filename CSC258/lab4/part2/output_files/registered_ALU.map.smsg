@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at registered_ALU.v(7): object "HEX0" differs only in case from object "hex0" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab3/part3/registered_ALU.v Line: 7
+Info (10281): Verilog HDL Declaration information at registered_ALU.v(7): object "HEX4" differs only in case from object "hex4" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab3/part3/registered_ALU.v Line: 7
+Info (10281): Verilog HDL Declaration information at registered_ALU.v(7): object "HEX5" differs only in case from object "hex5" in the same scope File: /h/u11/c6/01/gillyuv2/CSC258/Lab3/part3/registered_ALU.v Line: 7
